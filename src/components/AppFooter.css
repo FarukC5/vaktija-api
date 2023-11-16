@@ -1,0 +1,30 @@
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+  z-index:0 ;
+}
+@media only screen and (max-width: 500px) {
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer span {
+    font-weight: 400;
+    background: -webkit-linear-gradient(white, #65819d);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}

@@ -1,0 +1,39 @@
+.place-list {
+  list-style: none;
+  margin: 1rem auto;
+  padding: 0;
+  width: 90%;
+  max-width: 40rem;
+}
+.app-main {
+  background: radial-gradient(ellipse at center, #38495a 10%, #090a0f 100%);
+}
+
+.app-header {
+  display: flex;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  justify-content: space-around;
+}
+
+.app-header-2 {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: space-around;
+}
+
+.daily-header {
+ font-weight: lighter;
+}
+
+.header-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date-header {
+  font-weight: lighter;
+  font-size: smaller;
+  text-align: center;
+}

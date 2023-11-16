@@ -1,0 +1,78 @@
+.vakats-main-div1 {
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 310px;
+}
+
+.vakats-main-div2 {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: "";
+}
+
+.vakats-duration-section1 {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: self-end;
+  width: 100%;
+}
+
+.vakats-duration-section1 div {
+  color: #324962;
+  width: 70px;
+  margin-top: -2px;
+  background-color: #57f8d5;
+  display: flex;
+  border-radius: 4px;
+  align-content: revert-layer;
+  align-items: self-end;
+  justify-content: space-around;
+}
+
+.vakat-names-section1 {
+  width: 100%;
+  align-items: self-end;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-right: "";
+}
+
+.vakat-names-section1 div {
+  width: 50px;
+  color: "";
+  margin-top: 3px;
+  background: "";
+  display: flex;
+  align-content: revert-layer;
+  align-items: self-end;
+  justify-content: space-around;
+  background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yearly-header {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: lighter;
+}
+
+.yearly-numbers {
+  margin-right: 5px;
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.yearly-days {
+  margin-left: 5px;
+  width: 40%;
+  display: flex;
+  justify-content: flex-start;
+}

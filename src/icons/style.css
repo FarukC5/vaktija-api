@@ -1,0 +1,19 @@
+.map-marker-alt,
+.chart-simple,
+.date-calendar {
+  margin-top: 1px;
+  margin-left: 1px;
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  fill: rgba(225, 237, 249, 0.8);
+}
+
+.chart-simple22 {
+  margin-top: 21px;
+  margin-left: 1px;
+  cursor: pointer;
+  fill: rgba(225, 237, 249, 0.8);
+}
+
+/* fontawesome.com/icons*/

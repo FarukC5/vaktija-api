@@ -1,0 +1,93 @@
+.current-city h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 3em;
+  font-weight: 600;
+  background: -webkit-linear-gradient(white, #4f677e); /* #38495a*/
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.current-city span {
+  margin: 4px;
+  font-size: 1.2em;
+  font-weight: 500;
+  background: -webkit-linear-gradient(white, #4f677e); /* */
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.next-listAAAA {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#edd979 0%, #d48d00 70%, #f7d801 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold {
+  background: (#b78727, #d48d00, #f4bc01, #f4c711, #f7d801)
+    color(#deb20b, #f0d977, #e8b327, #edd979);
+}
+
+.current-date {
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.current-date div {
+  width: 100%;
+  display: block;
+  background: -webkit-linear-gradient(white 20%, #65819d 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.current-date .lunar {
+  transform: rotateX(90deg);
+  transition: all ease-in 0.2s;
+  position: absolute;
+  animation: lunar 10s infinite;
+  animation-delay: 5s;
+}
+
+.current-date .solar {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+  animation: solar 10s infinite;
+  animation-delay: 5s;
+  transform: rotateX(0deg);
+}
+
+@keyframes solar {
+  2% {
+    transform: rotateX(90deg);
+  }
+  50% {
+    transform: rotateX(90deg);
+  }
+
+  52% {
+    transform: rotateX(0deg);
+  }
+}
+
+@keyframes lunar {
+  2% {
+    transform: rotateX(90deg);
+  }
+
+  4% {
+    transform: rotateX(0deg);
+  }
+
+  48% {
+    transform: rotateX(0deg);
+  }
+
+  50% {
+    transform: rotateX(90deg);
+  }
+}

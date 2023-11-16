@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700");
+@import "./components/Counter.css";
+@import "./components/CurrentCity.css";
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --background: radial-gradient(ellipse at center, #38495a 10%, #090a0f 100%);
+}
+
+html {
+  height: 100%;
+  background: var(--background);
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+ font-family: "Lato", sans-serif;
+}
+
+.gold {
+  background: (#b78727, #d48d00, #f4bc01, #f4c711, #f7d801)
+    color(#deb20b, #f0d977, #e8b327, #edd979);
+}

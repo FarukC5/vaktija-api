@@ -1,0 +1,83 @@
+.sidenav {
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  color: #f1f1f1;
+  overflow: auto;
+  overflow-x: auto;
+}
+
+.cities {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1em;
+  margin: 2em 3em 0 3em;
+}
+
+.cities span {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 0.1em 0 0.1em;
+  padding: 0.2em;
+}
+
+.text-end {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  margin: 1em 9em 0 9em;
+}
+
+.sidenav a {
+  text-decoration: none;
+  color: #818181;
+  transition: all 0.3s ease-out;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.sidenav .closebtn {
+  font-size: 36px;
+}
+
+.sidenav span {
+  text-decoration: none;
+  color: #818181;
+  transition: all 0.3s ease-out;
+}
+
+.sidenav span:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.location-5 {
+  font-size: 16px;
+}
+
+a.location-4 {
+  font-size: 16px;
+}
+
+a.location-3 {
+  font-size: 20px;
+}
+
+a.location-2 {
+  font-size: 30px;
+}
+
+a.location-1 {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,48 @@
+.vakats-main-div {
+  cursor: default;
+  height: 310px;
+  bottom: 0;
+}
+
+.vakats-duration-section {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: self-end;
+  bottom: 0;
+}
+
+.vakats-duration-section div {
+  color: #324962;
+  width: 70px;
+  margin-top: -2px;
+  background-color: #57f8d5;
+  display: flex;
+  border-radius: 4px;
+  align-content: revert-layer;
+  align-items: self-end;
+  justify-content: space-around;
+}
+
+.vakat-names-section {
+  background: "";
+  align-items: self-end;
+  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-right: "";
+}
+
+.vakat-names-section div {
+  width: 50px;
+  color: "";
+  margin-top: 3px;
+  background: "";
+  display: flex;
+  align-content: revert-layer;
+  align-items: self-end;
+  justify-content: space-around;
+  background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

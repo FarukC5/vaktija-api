@@ -1,0 +1,66 @@
+#month,
+#day {
+  align-items: center;
+  width: 20%;
+  padding: 4px 4px;
+  margin: 4px 4px;
+  box-sizing: border-box;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 4px;
+  background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.search {
+  width: 20%;
+  padding: 8px 8px 8px 8px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid grey;
+  background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.search:active {
+  background: gray;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox -moz-appearance*/
+input[type="number"] {
+  width: 20%;
+  box-sizing: border-box;
+  padding: 5px 8px;
+  margin: 0px 20px 0 0;
+  -moz-appearance: textfield;
+  outline: none;
+  border: 2px solid grey;
+  border-radius: 4px;
+  background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  caret-color: white;
+}
+
+.year:focus {
+  outline: none;
+  border: 2px solid darkgrey;
+  border-radius: 4px;
+}
+
+.output {
+  height: 100%;
+  text-align: center;
+  margin-top: 40px;
+  color: white;
+}
