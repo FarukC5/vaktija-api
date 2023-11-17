@@ -1,70 +1,28 @@
-# Getting Started with Create React App
+# **vaktija-api project**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Final App](./vaktija-api.gif)
 
-## Available Scripts
+## Deployed live version:
+[vaktija api](https://vaktija-api.vercel.app/)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+In the beginning, the idea was just to display timestamps for 5 daily prayers using vaktija.ba API. Later on, I expanded this project with 2 charts to display time differences between prayers on a daily and yearly basis, afterward, I also added a component to find any date in the range from the year 1937 to 2077 and to look up what was the lunar date or what lunar date will be in the future
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Basic features of this app:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Daily prayer times overview for cities in BiH. 
+- Duration of 5 daily prayers shown through a diagram.
+- Get any date in a range from the year 1937 - 2077 and show the lunar date equivalent.
 
-### `npm test`
+## This project uses the following technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [React](https://reactjs.org) fronted
+- [Context API](https://react.dev/learn/scaling-up-with-reducer-and-context) for state management between React components
+- [date-fns](https://date-fns.org/) date utility library for date management
 
-### `npm run build`
+### To get a local copy up and running, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1.  Clone the repository using your terminal: `git clone https://github.com/FarukC5/vaktija-api`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+2.  Navigate to vaktija-api folder, and run `npm install` to install NPM packages. Then, run `npm start` to start this app.
