@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 import "./MyLunarDate.css";
+import { SearchIcon } from "../icons/svg-icons";
 
 const initialState = {
   day: "",
@@ -35,18 +36,18 @@ function MyLunarDate() {
   const days = Array.from({ length: 31 }, (_, i) => (i + 1).toString());
 
   const months = [
-    "Januar",
-    "Februar",
-    "Mart",
-    "April",
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
     "Maj",
-    "Juni",
-    "Juli",
-    "August",
-    "Septembar",
-    "Oktobar",
-    "Novembar",
-    "Decembar",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Okt",
+    "Nov",
+    "Dec",
   ];
 
   const handleChange = (e) => {
@@ -54,6 +55,10 @@ function MyLunarDate() {
     dispatch({
       type: "DATE",
       payload: { field: name, value },
+    });
+    dispatch({
+      type: "DATA",
+      payload: { error: "" },
     });
   };
 
@@ -89,14 +94,7 @@ function MyLunarDate() {
 
   return (
     <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          flexDirection: "",
-          background: "",
-        }}
-      >
+      <div className="day-month-year">
         <select id="day" name="day" onChange={handleChange}>
           <option value="">Dan</option>
           {days.map((day, index) => (
@@ -124,16 +122,7 @@ function MyLunarDate() {
           onInput={(e) => (e.target.value = e.target.value.slice(0, 4))}
           onChange={handleChange}
         ></input>
-
-        <span
-          className="search"
-          id="search"
-          type=""
-          onClick={fetchData}
-          placeholder="Pronađi"
-        >
-          Pronađi
-        </span>
+        <SearchIcon className="search-icon" onClick={fetchData} />
       </div>
       <div className="output">
         {state.data && (
