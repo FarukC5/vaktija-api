@@ -3,17 +3,17 @@
 ![Final App](./vaktija-api.gif)
 
 ## Deployed live version:
-- [vaktija-api]()
+[vaktija api](https://vaktija-api.vercel.app/)
 
 ## Description
 
-In the beginning the idea was just to display timestamps for 5 daily prayers using vaktija.ba API. Later on I expanded this project with 2 charts to display time differences between prayers on daily and yearly basis, afterward, I also added a component to find any date in the range from year 1937 to 2077 and to look up what was the lunar date or what lunar date will be in the future
+In the beginning, the idea was just to display timestamps for 5 daily prayers using vaktija.ba API. Later on, I expanded this project with 2 charts to display time differences between prayers on a daily and yearly basis, afterward, I also added a component to find any date in the range from the year 1937 to 2077 and to look up what was the lunar date or what lunar date will be in the future
 
-## Basic featuers of this app:
+## Basic features of this app:
 
 - Daily prayer times overview for cities in BiH. 
 - Duration of 5 daily prayers shown through a diagram.
-- Get any date in a range from year 1937 - 2077 and show the lunar date equivalent.
+- Get any date in a range from the year 1937 - 2077 and show the lunar date equivalent.
 
 ## This project uses the following technologies:
 
