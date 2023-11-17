@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-![Final App](./MERN.gif)
+![Final App](./vaktija-api.gif)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
