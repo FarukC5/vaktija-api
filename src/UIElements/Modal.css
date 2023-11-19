@@ -11,12 +11,11 @@
 
 .modal__header {
   position: relative;
-  margin-top: 8px;
+  margin-top: 2px;
   width: 100%;
-  padding: 1rem 0.5rem;
+  padding: 0.2rem 0.2rem;
   background: radial-gradient(right at center, #324962 0%, #090a0f 100%);
   border-bottom: 2px solid #324962;
-  color: white;
 }
 
 .modal__header h2 {
