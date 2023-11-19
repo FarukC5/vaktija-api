@@ -33,7 +33,8 @@
 }
 
 .date-header {
-  font-weight: lighter;
-  font-size: smaller;
+  font-weight:200;
+  font-size:smaller;
   text-align: center;
+  color:whitesmoke
 }
