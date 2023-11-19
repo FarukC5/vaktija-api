@@ -1,6 +1,6 @@
 .current-city h1 {
   text-align: center;
-  margin: 10px;
+  margin: 5px;
   font-size: 3em;
   font-weight: 600;
   background: -webkit-linear-gradient(white, #4f677e); /* #38495a*/
@@ -13,15 +13,6 @@
   font-size: 1.2em;
   font-weight: 500;
   background: -webkit-linear-gradient(white, #4f677e); /* */
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.next-listAAAA {
-  margin: 0;
-  font-size: 3rem;
-  font-weight: 600;
-  background: -webkit-linear-gradient(#edd979 0%, #d48d00 70%, #f7d801 110%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
