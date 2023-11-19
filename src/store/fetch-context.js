@@ -88,11 +88,19 @@ export const FetchDataProvider = (props) => {
   }/ ${format(yesterDay, "yyyy/MM/dd")}`;
 
   const fetchData = async () => {
+    const noCorsMode = {
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+    };
+
     try {
       const [response1, response2, response3] = await Promise.all([
-        fetch(url),
-        fetch(nextUrl),
-        fetch(prevUrl),
+        fetch(url, { noCorsMode }),
+        fetch(nextUrl, { noCorsMode }),
+        fetch(prevUrl, { noCorsMode }),
       ]);
 
       if (!response1.ok || !response2.ok || !response3.ok) {
@@ -121,7 +129,6 @@ export const FetchDataProvider = (props) => {
           serverError: "Error: Cound not fetch data!",
         },
       });
-
       return;
     }
   };
@@ -160,7 +167,14 @@ export const FetchDataProvider = (props) => {
       )}
       {state.serverError && (
         <>
-          <h2 style={{ textAlign: "", margin: "20px", color: "white" }}>
+          <h2
+            style={{
+              textAlign: "",
+              margin: "20px",
+              color: "white",
+              fontWeight: "lighter",
+            }}
+          >
             {state.serverError}
           </h2>
         </>
