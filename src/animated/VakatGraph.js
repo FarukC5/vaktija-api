@@ -73,7 +73,7 @@ export const LastThirdOfTheNight = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: "center" }}>
+    <div className="last-third-night">
       zadnja trećina noći {lastThirdTime ? format(lastThirdTime, "HH:mm") : ""}
     </div>
   );
@@ -142,9 +142,6 @@ function VakatGraph(props) {
     });
     // eslint-disable-next-line
   }, []);
-
- 
-
 
   let displayVakat = [];
 
