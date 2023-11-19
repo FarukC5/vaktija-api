@@ -9,14 +9,8 @@
 
 .current-vakat-list {
   width: 85%;
-  opacity: "";
   margin: 4px;
   display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: "";
-  justify-content: "center";
-  justify-items: center;
 }
 
 .vakat-time-h1 {
@@ -29,7 +23,7 @@
 }
 
 .vakat-time-h2 {
-  background-color: "";
+  background: "";
 }
 
 .current-vakat-list span {
@@ -55,14 +49,6 @@
   -webkit-text-fill-color: transparent;
 }
 
-.vakat-list-query-before {
-  font-weight: 500;
-  margin: 4px;
-  background: -webkit-linear-gradient(white, #65819d);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .vakat-list-h2 {
   font-weight: 500;
   margin: 4px;
@@ -73,15 +59,24 @@
 }
 
 .vakat-list-query-h2 {
-  font-weight: 500;
+  font-weight: 100;
   margin: 4px;
   background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.vakat-list-query-before {
+  font-weight: 500;
+  margin: 4px;
+  background: -webkit-linear-gradient(white, #65819d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .query-div {
   display: flex;
+  flex-direction: column;
   width: 50%;
   margin-left: "";
   text-overflow: ellipsis;
@@ -90,18 +85,27 @@
 }
 /*768*/
 .query-div h2 {
-  margin-left: 16px;
-  font-size: 1.8em;
+  margin-left: 10px;
+  margin-bottom: 0px;
+  padding: 0px;
+  font-size: 1.5em;
 }
 
+.query-div span {
+  margin-left: 12px;
+}
+/*
 @media (max-width: 540px) {
   .query-div h2 {
-    font-size: 1.3em;
+    font-size: 1.1em;
+    margin-bottom: 0px;
+    padding: 0px;
   }
   .vakat-time-h1 h1 {
-    font-size: 2.5em;
+    font-size: 2.6em;
   }
 }
+*/
 
 @media (min-width: 1009px) {
   .current-vakat-map {
@@ -113,9 +117,12 @@
   .current-vakat-list {
     display: flex;
     flex-direction: column;
-    width:auto;
+    width: auto;
     margin: 1% 1.5% 0 1.5%;
-   
+    align-items: center;
+    text-align: center;
+    justify-content: "center";
+    justify-items: center;
   }
 
   .vakat-list-query-h2 {
@@ -149,9 +156,13 @@
   .query-div h2 {
     margin-left: "";
   }
+
+  .query-div span {
+    margin-left: 0px;
+  }
 }
 
-.current-list {
+.next-list {
   margin: 0;
   font-size: 3rem;
   font-weight: 600;
@@ -160,7 +171,17 @@
   -webkit-text-fill-color: transparent;
 }
 
-.next-list {
+.past-list {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 600;
+  background: -webkit-linear-gradient(#7e8c9c 0%, #7e8c9c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 50%;
+}
+
+.current-list {
   margin: 0;
   font-size: 3rem;
   font-weight: 600;
@@ -173,6 +194,55 @@
   );
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.past-relative-time {
+  background: -webkit-linear-gradient(#7e8c9c 0%, #7e8c9c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 50%;
+}
+
+.current-relative-time {
+  background: repeating-linear-gradient(
+    #edd979 0%,
+    #d48d00 20%,
+    #f7d801 50%,
+    #b78727 70%,
+    #f0d977 110%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.next-relative-time {
+  background: -webkit-linear-gradient(white 0%, #4f677e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.next-vakat-name {
+  background: -webkit-linear-gradient(white 0%, #4f677e);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.current-vakat-name {
+  background: repeating-linear-gradient(
+    #edd979 0%,
+    #d48d00 20%,
+    #f7d801 50%,
+    #b78727 70%,
+    #f0d977 110%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.past-vakat-name {
+  background: -webkit-linear-gradient(#7e8c9c 0%, #7e8c9c);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 50%;
 }
 
 .gold {
