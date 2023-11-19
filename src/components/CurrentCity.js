@@ -3,7 +3,6 @@ import FetchData from "../store/fetch-context";
 
 const CurrentCity = () => {
   const ctxdata = useContext(FetchData);
-  //const { lokacija, datum } = ctxdata.dataV;
   const { lokacija, datum } = ctxdata.todayVakat;
 
   return (
