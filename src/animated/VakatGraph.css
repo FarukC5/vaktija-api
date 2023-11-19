@@ -14,28 +14,27 @@
 
 .vakats-duration-section div {
   color: #324962;
-  width: 70px;
-  margin-top: -2px;
+  width: 60px;
+  margin: -2px 2px 0px 2px;
   background-color: #57f8d5;
   display: flex;
   border-radius: 4px;
   align-content: revert-layer;
   align-items: self-end;
   justify-content: space-around;
+  font-size:small;
+  font-weight: 600;
 }
 
 .vakat-names-section {
-  background: "";
   align-items: self-end;
   justify-content: space-around;
   display: flex;
   flex-direction: row;
-  margin-right: "";
 }
 
 .vakat-names-section div {
   width: 50px;
-  color: "";
   margin-top: 3px;
   background: "";
   display: flex;
@@ -45,4 +44,11 @@
   background: linear-gradient(#edd979 0%, #d48d00 20%, #f0d977 110%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.last-third-night {
+text-align: center;
+padding: 0.5rem;
+color: whitesmoke;
+font-weight: lighter;
 }
