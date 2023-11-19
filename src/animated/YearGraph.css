@@ -23,14 +23,16 @@
 
 .vakats-duration-section1 div {
   color: #324962;
-  width: 70px;
-  margin-top: -2px;
+  width: 60px;
+  margin: -2px 2px 0px 2px;
   background-color: #57f8d5;
   display: flex;
   border-radius: 4px;
   align-content: revert-layer;
   align-items: self-end;
   justify-content: space-around;
+  font-size:small;
+  font-weight: 600;
 }
 
 .vakat-names-section1 {
@@ -61,6 +63,8 @@
   text-align: center;
   justify-content: center;
   font-weight: lighter;
+  padding: 0.5rem;
+  color:whitesmoke;
 }
 
 .yearly-numbers {
@@ -68,6 +72,7 @@
   width: 40%;
   display: flex;
   justify-content: flex-end;
+  font-weight: lighter;
 }
 
 .yearly-days {
@@ -75,4 +80,5 @@
   width: 40%;
   display: flex;
   justify-content: flex-start;
+  font-weight: lighter;
 }
