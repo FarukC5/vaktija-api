@@ -11,20 +11,20 @@ const Vakat = ({
 }) => {
   const currentVakatTime = format(new Date(), "HH:mm");
   const allVakatTimes = vakatTime.length < 5 ? "0" + vakatTime : vakatTime;
-  
-  const prevVakat =
-  findPrevVakat.at(-1) !== undefined
-    ? findPrevVakat.at(-1).length < 5
-      ? "0" + findPrevVakat.at(-1)
-      : findPrevVakat.at(-1)
-    : currentVakatTime;
 
-const nextNextVakat =
-  nextVakat !== undefined
-    ? nextVakat.length < 5
-      ? "0" + nextVakat
-      : nextVakat
-    : currentVakatTime;
+  const prevVakat =
+    findPrevVakat.at(-1) !== undefined
+      ? findPrevVakat.at(-1).length < 5
+        ? "0" + findPrevVakat.at(-1)
+        : findPrevVakat.at(-1)
+      : currentVakatTime;
+
+  const nextNextVakat =
+    nextVakat !== undefined
+      ? nextVakat.length < 5
+        ? "0" + nextVakat
+        : nextVakat
+      : currentVakatTime;
 
   const DisplayRelativeTime = () => {
     let distance = formatDistance(
@@ -34,33 +34,27 @@ const nextNextVakat =
     );
 
     const minutesBefore = distance.slice(0, 2);
-    const hoursBefore = distance.slice(6, 8);
     const minutes = distance.slice(3, 5);
+    const hoursBefore = distance.slice(6, 8);
+    const hours = distance.slice(9, 11);
 
     const minutesEqual =
-      distance.slice(0, 2) == 1 ||
-      distance.slice(0, 2) == 21 ||
-      distance.slice(0, 2) == 31 ||
-      distance.slice(0, 2) == 41 ||
-      distance.slice(0, 2) == 51;
+      minutesBefore == 1 ||
+      minutesBefore == 21 ||
+      minutesBefore == 31 ||
+      minutesBefore == 41 ||
+      minutesBefore == 51;
+
     const minutesEqualIn =
-      distance.slice(3, 5) == 1 ||
-      distance.slice(3, 5) == 21 ||
-      distance.slice(3, 5) == 31 ||
-      distance.slice(3, 5) == 41 ||
-      distance.slice(3, 5) == 51;
-    const hoursEqual =
-      distance.slice(6, 8) == 1 ||
-      distance.slice(6, 8) == 21 ||
-      distance.slice(6, 8) == 31 ||
-      distance.slice(6, 8) == 41 ||
-      distance.slice(6, 8) == 51;
-    const hoursEqualIn =
-      distance.slice(8, 10) == 1 ||
-      distance.slice(8, 10) == 21 ||
-      distance.slice(8, 10) == 31 ||
-      distance.slice(8, 10) == 41 ||
-      distance.slice(8, 10) == 51;
+      minutes == 1 ||
+      minutes == 21 ||
+      minutes == 31 ||
+      minutes == 41 ||
+      minutes == 51;
+
+    const hoursEqual = hoursBefore == 1 || hoursBefore == 21;
+
+    const hoursEqualIn = hours == 1 || hours == 21;
 
     const relativeTime = distance.includes("ago")
       ? distance.includes("less")
@@ -70,8 +64,8 @@ const nextNextVakat =
           ? `prije ` + minutesBefore + ` minut`
           : `prije ` + minutesBefore + ` minuta`
         : hoursEqual
-        ? `prije ` + distance.slice(6, 8) + ` sat`
-        : distance.slice(6, 8) < 5
+        ? `prije ` + hoursBefore + ` sat`
+        : hoursBefore < 5
         ? `prije ` + hoursBefore + ` sata`
         : `prije ` + hoursBefore + ` sati`
       : distance.includes("nute")
@@ -81,10 +75,10 @@ const nextNextVakat =
         ? `za ` + minutes + ` minut`
         : `za ` + minutes + ` minuta`
       : hoursEqualIn
-      ? `za ` + distance.slice(8, 10) + ` sat`
-      : distance.slice(8, 10) < 5
-      ? `za ` + distance.slice(8, 10) + ` sata`
-      : `za ` + distance.slice(8, 10) + ` sati`;
+      ? `za ` + hours + ` sat`
+      : hours < 5
+      ? `za ` + hours + ` sata`
+      : `za ` + hours + ` sati`;
 
     return (
       <>
@@ -104,8 +98,6 @@ const nextNextVakat =
       </>
     );
   };
-
-  
 
   return (
     <>
